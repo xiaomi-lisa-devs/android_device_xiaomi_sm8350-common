@@ -727,25 +727,25 @@ vendor/lib64/libqti-perfd.so|313d75511ead8ab9dc2421f0bf5e1522adc11c72
 vendor/lib64/libqti-util.so|1534277024be2bee8b0f7ba7566a08ac8c078a48
 vendor/lib64/libqti-utils.so|60f46ba148ab73ef82b6f575280d908036793931
 
-# Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/gPLAFFeature.xml
-vendor/etc/lm/sPLHFeature.xml
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/libgplaf.so
-vendor/lib64/liblmutils-ns.so
-vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libprekill.so
-vendor/lib64/libsplh.so
+# Perf LM - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+vendor/etc/lm/prekill/prekill_2GB.data|c731aed560f7a8f0ac077ec989cc9c6e106e4cc5
+vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
+vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
+vendor/etc/lm/AdaptLaunchFeature.xml|183a1233b62ded8d93a5d0a015df722c904f371b
+vendor/etc/lm/AppClassifierFeature.xml|9bb1a5d80b1f39913a288a6607100eab0f104b74
+vendor/etc/lm/GameOptimizationFeature.xml|89f46b98145c07cdc17634ab42a4f079979043a9
+vendor/etc/lm/PreKillFeature.xml|6e6e7bc843c3632e8ddedf6299bd9f7d2e0878ef
+vendor/etc/lm/gPLAFFeature.xml|344f486ca9f812a4d92b29d1f80dbe52471481f3
+vendor/etc/lm/sPLHFeature.xml|08d19795671d4f8abfab55e4bf4f2c2a2d3e2374
+vendor/lib64/libadaptlaunch.so|c1ef41d5103592afc839f373adb0126ce62f71cf
+vendor/lib64/libappclassifier.so|6ba7265b8b16c9df6a456a1595840561fc0bf6e1
+vendor/lib64/libgameoptfeature.so|6966d599dd14225c9122175209daf0dba96bbe36
+vendor/lib64/libgplaf.so|35e14f070f01dd0d6fc2327f46cd3183392343b5
+vendor/lib64/liblmutils-ns.so|1700befd702b9ead8610e4847513671406d61cc9
+vendor/lib64/libmemperfd.so|a031d86e247f984a634e50d8312a8f595b1ec8af
+vendor/lib64/libmeters-ns.so|0550ccb4ea70b078b5c67b6979f06969eba7a2f9
+vendor/lib64/libprekill.so|48b3a2743291ab2cdebeae07dacdae2602d691e2
+vendor/lib64/libsplh.so|484b9027a6eb2d7302dee78c2d222df0300ef3ce
 
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
