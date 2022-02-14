@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from missi-user 11 RKQ1.201112.002 V12.5.8.0.RKKEUXM release-keys
+# All unpinned blobs below are extracted from haydn_eea-user 11 RKQ1.201112.002 V12.5.8.0.RKKEUXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -26,17 +26,17 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Bluetooth - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|cc38c89611a42fdfd0da67a7fdc1ec2f4884992b
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|5b635a393af46e820690552ed8170571e0b1fee0
 vendor/lib64/libbtnv.so|7808463b58eb41ec50a0a2b81079229316ec11e3
 vendor/lib64/libsoc_helper.so|30dc6288ae0bdd74a2750dbde4362eb1c3cc1de7
 
-# Bluetooth (shared dependencies) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Bluetooth (shared dependencies) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|9af9b8c5d45b5fb352a2b7f79ef03f2da52b8904
 
-# Bluetooth (A2DP) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Bluetooth (A2DP) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/lib/hw/audio.bluetooth_qti.default.so|65088e5ea8ae9d57b27202f95535f503447c0732
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9baceec3a332f79945941b7dc74c27dbf115cfe2
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|b4d26ca8b9709617ffd46a1d303f227495cef9f9
@@ -229,7 +229,7 @@ vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 
-# Display postprocessing - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Display postprocessing - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/bin/hw/vendor.display.color@1.0-service|347fda7fe824e405829e1772739e999937421a58
 vendor/bin/ppd|28b9f29edf85ed300a3b3c7d81e2271ddf938969
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
@@ -242,7 +242,7 @@ vendor/lib64/vendor.display.color@1.4.so|fe3380621cf3384284fc19d82b8644910adb06e
 vendor/lib64/vendor.display.color@1.5.so|9a2c10cbf8ed37371528cc33b7957ff6595ac2ee
 vendor/lib64/vendor.display.postproc@1.0.so|6fd8249ae537e145f1940cdd264773898e6f64b9
 
-# DPM - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# DPM - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 system_ext/bin/dpmd|e04b54867d3c1c5e6622e41bc052529a81c82e3c
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -316,7 +316,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Graphics (Adreno) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 -vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk;PRESIGNED|57f68fb3484aa59376dc29adc7aa8824c2f4edf3
 vendor/lib/egl/eglSubDriverAndroid.so|8c5ce83601b415fae82e53125d7f69089362a5a8
 vendor/lib/egl/libEGL_adreno.so|d3571ea46ad7922e00827dd88720516f0b45ae1b
@@ -351,16 +351,7 @@ vendor/lib64/libgsl.so|349c81dac5627ca947a7285fc90cda0a9d8cff7c
 vendor/lib64/libllvm-glnext.so|dc6ca74a9a3f1ef0fc90ceda90a53ff769c06241
 vendor/lib64/libllvm-qcom.so|a40891e529303817352a25f3f66ab39d247c85a6
 
-# Graphics (Adreno firmware) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
-vendor/firmware/a660_gmu.bin|607402e7c1c49f486258e5e02780e74fcf7311e1
-vendor/firmware/a660_sqe.fw|8e6becfbcff6ff6e64b5edb6f135cc6f656d4ee1
-vendor/firmware/a660_zap.b00|8db2ba7a6da65a4d35d9c5da0a49493efd27913a
-vendor/firmware/a660_zap.b01|6fc35238a80a19858e3972eaec89dce9aeb4e7cc
-vendor/firmware/a660_zap.b02|bcbdf56fca034c66a9e44242587ed25a1ffe2abe
-vendor/firmware/a660_zap.elf|e55e8cefda50ddfa8fb70f298d80a872952da86c
-vendor/firmware/a660_zap.mdt|0d7a3399e399a0a3c5e15c8beb07c5be7608d4cc
-
-# Graphics (Vulkan) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Graphics (Vulkan) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/lib/hw/vulkan.adreno.so|edff94ca9799b2337746f5742f2fcd8f404a8f23
 vendor/lib64/hw/vulkan.adreno.so|63aad1764600bcf1105a516ca6eddf333ed378c4
 
@@ -428,7 +419,7 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtwifi.conf
 
-# IMS - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# IMS - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 system_ext/lib64/lib-imsvideocodec.so|4a787afeb91cccc7aa6c90f94c9c511e54829d03
 system_ext/lib64/lib-imsvt.so|f795cc87119b49587dbb1f3e4349fcf67b0610ed
 system_ext/lib64/lib-imsvtextutils.so|50a092eb7b490f4307bddb3d5a4c595b458bc503
@@ -489,7 +480,7 @@ vendor/lib64/libqti-iopd.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
-# IPA firmware - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# IPA firmware - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 vendor/firmware/ipa_fws.b00|0ce8d89b0c684bc6984127ac9e9d7d5c5370fad0
 vendor/firmware/ipa_fws.b01|d2e2a6624a36e09559a9981946d6180fc595593e
@@ -533,7 +524,7 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
-# Media - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Media - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 system_ext/lib/libmmosal.so|d6fabd9084c804d0077e7c0e820cb76eae759479
 system_ext/lib/libmmparser_lite.so|52943425a42d4be397818929ed9dbf8fbd40b6fd
 system_ext/lib64/libmmosal.so|168f3f3ee8c6e8e3ffe8ed5aa8f7cd03ae3cc39c
@@ -559,7 +550,7 @@ vendor/lib/libqcodec2_utils.so|ff7d2b81c5959ff222cf6f59c834f90c82a9f046
 vendor/lib/libqcodec2_v4l2codec.so|0bbbee245b1071d6c0702579af8e5b0095e8baae
 vendor/lib64/libmmosal.so|3736380ae324c63fbb3a3ce20b7969dfcdc60d61
 
-# Media (VPU firmware) - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Media (VPU firmware) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/firmware/vpu20_1v.b00|daba699b89a73e4d4098bfe02adeb9483f7d2378
 vendor/firmware/vpu20_1v.b01|f07c493a758d69b1b871858342fd3784b93176d6
 vendor/firmware/vpu20_1v.b02|1451269225d2f41abc2f214d7d538d6d7395c48c
@@ -705,7 +696,7 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Perf - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Perf - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|e74bfe181f72bc474c1bd061973e5048095d9516
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|74488c4a4dbdd47dd04646ac1224b1ca3af5609f
@@ -766,7 +757,7 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
-# QMI - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# QMI - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
 etc/sysconfig/qti_whitelist.xml|36d11f2735fcd9ad3ac5639f3c0bb011941b8335
 vendor/bin/irsc_util|07f791047e8194243d432176ef21756370e89f3f
@@ -821,7 +812,7 @@ vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 -vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
-# RIL - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# RIL - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|20da64a1fbb4d9c04c763333c4d9a0b7c1053fb9
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
@@ -989,7 +980,7 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# VPP - from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# VPP - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/bin/hw/qconfigservice|d7a9c20dd3bc1e0955031a746e627fc1f6aea51b
 vendor/bin/vppservice|ad57d309525ca2ef10709e81a14a72ecababc518
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
