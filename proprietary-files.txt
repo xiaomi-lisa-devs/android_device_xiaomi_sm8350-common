@@ -480,15 +480,19 @@ vendor/lib64/libqti-iopd.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
-# IPA firmware - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
-vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
-vendor/firmware/ipa_fws.b00|0ce8d89b0c684bc6984127ac9e9d7d5c5370fad0
-vendor/firmware/ipa_fws.b01|d2e2a6624a36e09559a9981946d6180fc595593e
-vendor/firmware/ipa_fws.b02|de771411df81d0c4183a698746351ee0943f5901
-vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/ipa_fws.elf|c43dfc741b346e154b9b09666d1ca00f12652b94
-vendor/firmware/ipa_fws.mdt|ff1bc91aa4408fd6bc791260786faa5820c1c138
+# IPA
+vendor/etc/init/ipa_fws.rc
+
+# IPA firmware (lahaina)
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+
+# IPA firmware (yupik) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/firmware/yupik_ipa_fws.b00|91417dbc050df4edd492918a4a1e884ad9e4d3f2
 vendor/firmware/yupik_ipa_fws.b01|8203795e4b12e4742eccaaed9b1ed5fe7cacfe31
 vendor/firmware/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
@@ -550,7 +554,7 @@ vendor/lib/libqcodec2_utils.so|ff7d2b81c5959ff222cf6f59c834f90c82a9f046
 vendor/lib/libqcodec2_v4l2codec.so|0bbbee245b1071d6c0702579af8e5b0095e8baae
 vendor/lib64/libmmosal.so|3736380ae324c63fbb3a3ce20b7969dfcdc60d61
 
-# Media (VPU firmware) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# Media (VPU yupik firmware) - from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 vendor/firmware/vpu20_1v.b00|daba699b89a73e4d4098bfe02adeb9483f7d2378
 vendor/firmware/vpu20_1v.b01|f07c493a758d69b1b871858342fd3784b93176d6
 vendor/firmware/vpu20_1v.b02|1451269225d2f41abc2f214d7d538d6d7395c48c
@@ -574,52 +578,54 @@ vendor/firmware/vpu20_1v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
 vendor/firmware/vpu20_1v.mbn|6821564fabcc120920442a92370d6fe144294475
 vendor/firmware/vpu20_1v.mdt|2ed76d7af0ed480feaba3837df897703f6892c20
 vendor/firmware/vpu20_1v_unsigned.mbn|ed68fdde13b8f9c0e69416269654fe362780b283
-vendor/firmware/vpu20_2v.b00|e08f0ccfdd65695d252757558fc9de7139b154ea
-vendor/firmware/vpu20_2v.b01|24310489ff38cd79e2978891ef00bfbc6ec2c59e
-vendor/firmware/vpu20_2v.b02|dc7a2d0de2a2a80f45db7eafea41c076eb24cf6d
-vendor/firmware/vpu20_2v.b03|7772b18b16e520641e8051fd6284384e9b0e1939
-vendor/firmware/vpu20_2v.b04|917bdfe35ad6c3dbed7f80ae9a17653dbb9d9ead
-vendor/firmware/vpu20_2v.b05|f726e7fa233485e02ef6172833d51353627aa81d
-vendor/firmware/vpu20_2v.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
-vendor/firmware/vpu20_2v.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
-vendor/firmware/vpu20_2v.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
-vendor/firmware/vpu20_2v.b09|22cc8a97c666cb71fcefa743574ba0b7ce1898e9
-vendor/firmware/vpu20_2v.b10|4457f998450419199f215ddf57443eae9699c89c
-vendor/firmware/vpu20_2v.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_2v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
-vendor/firmware/vpu20_2v.mbn|281e2b4a01d0938a5a560e92d83a0168d443a645
-vendor/firmware/vpu20_2v.mdt|03616fbca9f5cadce9b663d4121be4a06294b5d5
-vendor/firmware/vpu20_2v_unsigned.mbn|0c19bd6e5af18dc020d99e7c6f3728033065a738
-vendor/firmware/vpu20_4v.b00|7c3e655bc49bc04ab7afc5d4c5a1c38a78832c67
-vendor/firmware/vpu20_4v.b01|7ebb7aa52b2b46c6d6ac0a49025eff5eaeeb5f0f
-vendor/firmware/vpu20_4v.b02|dd484a79d8e31861c02e348ed8e568a3122adcea
-vendor/firmware/vpu20_4v.b03|7772b18b16e520641e8051fd6284384e9b0e1939
-vendor/firmware/vpu20_4v.b04|2785265226985939cb1843e8a7773b1e8eef1582
-vendor/firmware/vpu20_4v.b05|f726e7fa233485e02ef6172833d51353627aa81d
-vendor/firmware/vpu20_4v.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
-vendor/firmware/vpu20_4v.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
-vendor/firmware/vpu20_4v.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
-vendor/firmware/vpu20_4v.b09|a58b0a88fa88b76ed2021acdb83415759a9826ae
-vendor/firmware/vpu20_4v.b10|bce74f43ba7743b205b31f6cb5d8f1ccc0407f0b
-vendor/firmware/vpu20_4v.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/vpu20_4v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
-vendor/firmware/vpu20_4v.mbn|05a3b36158d85c37bb56912f57e4b46527a6ed3b
-vendor/firmware/vpu20_4v.mdt|b4b51da006ae4cc005a8b65d3f349ff9272595db
-vendor/firmware/vpu20_4v_unsigned.mbn|04122e8836192f8d88276a53798a9139b1e56bc3
+
+# Media (VPU lahaina firmware)
+vendor/firmware/vpu20_2v.b00
+vendor/firmware/vpu20_2v.b01
+vendor/firmware/vpu20_2v.b02
+vendor/firmware/vpu20_2v.b03
+vendor/firmware/vpu20_2v.b04
+vendor/firmware/vpu20_2v.b05
+vendor/firmware/vpu20_2v.b06
+vendor/firmware/vpu20_2v.b07
+vendor/firmware/vpu20_2v.b08
+vendor/firmware/vpu20_2v.b09
+vendor/firmware/vpu20_2v.b10
+vendor/firmware/vpu20_2v.b11
+vendor/firmware/vpu20_2v.b12
+vendor/firmware/vpu20_2v.b13
+vendor/firmware/vpu20_2v.b14
+vendor/firmware/vpu20_2v.b15
+vendor/firmware/vpu20_2v.b16
+vendor/firmware/vpu20_2v.b17
+vendor/firmware/vpu20_2v.b18
+vendor/firmware/vpu20_2v.b19
+vendor/firmware/vpu20_2v.mbn
+vendor/firmware/vpu20_2v.mdt
+vendor/firmware/vpu20_2v_unsigned.mbn
+vendor/firmware/vpu20_4v.b00
+vendor/firmware/vpu20_4v.b01
+vendor/firmware/vpu20_4v.b02
+vendor/firmware/vpu20_4v.b03
+vendor/firmware/vpu20_4v.b04
+vendor/firmware/vpu20_4v.b05
+vendor/firmware/vpu20_4v.b06
+vendor/firmware/vpu20_4v.b07
+vendor/firmware/vpu20_4v.b08
+vendor/firmware/vpu20_4v.b09
+vendor/firmware/vpu20_4v.b10
+vendor/firmware/vpu20_4v.b11
+vendor/firmware/vpu20_4v.b12
+vendor/firmware/vpu20_4v.b13
+vendor/firmware/vpu20_4v.b14
+vendor/firmware/vpu20_4v.b15
+vendor/firmware/vpu20_4v.b16
+vendor/firmware/vpu20_4v.b17
+vendor/firmware/vpu20_4v.b18
+vendor/firmware/vpu20_4v.b19
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v.mdt
+vendor/firmware/vpu20_4v_unsigned.mbn
 
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
