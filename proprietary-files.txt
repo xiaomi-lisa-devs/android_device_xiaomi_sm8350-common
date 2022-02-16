@@ -957,9 +957,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soter service (Tencent)
 -app/SoterService/SoterService.apk
 
-# Thermal
-vendor/bin/mi_thermald
-
 # Thermal engine
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
