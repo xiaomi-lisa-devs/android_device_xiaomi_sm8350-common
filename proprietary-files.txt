@@ -46,8 +46,8 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# Charger (Mi Turbo Charge)
-vendor/bin/batterysecret
+# Charger (Mi Turbo Charge) - from haydn V12.5.8.0.RKKEUXM
+vendor/bin/batterysecret|0f790277cce753d73045855d89aac75af3dcd6ad
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
