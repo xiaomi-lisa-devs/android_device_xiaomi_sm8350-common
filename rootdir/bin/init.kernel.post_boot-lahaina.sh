@@ -77,30 +77,6 @@ function configure_zram_parameters() {
 	fi
 }
 
-function configure_read_ahead_kb_values() {
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
-
-	dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
-
-	# Set 128 for <= 3GB &
-	# set 512 for >= 4GB targets.
-	if [ $MemTotal -le 3145728 ]; then
-		ra_kb=128
-	else
-		ra_kb=512
-	fi
-	if [ -f /sys/block/mmcblk0/bdi/read_ahead_kb ]; then
-		echo $ra_kb > /sys/block/mmcblk0/bdi/read_ahead_kb
-	fi
-	if [ -f /sys/block/mmcblk0rpmb/bdi/read_ahead_kb ]; then
-		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-	fi
-	for dm in $dmpts; do
-		echo $ra_kb > $dm
-	done
-}
-
 function configure_memory_parameters() {
 	# Set Memory parameters.
 	#
@@ -124,7 +100,6 @@ function configure_memory_parameters() {
 	ProductName=`getprop ro.product.name`
 
 	configure_zram_parameters
-	configure_read_ahead_kb_values
 	echo 100 > /proc/sys/vm/swappiness
 
         # Disable wsf  beacause we are using efk.
@@ -182,12 +157,9 @@ echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
 # cpuset parameters
 echo 0-2 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
-echo 4-7 > /dev/cpuset/foreground/boost/cpus
-echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+echo 4-6 > /dev/cpuset/foreground/boost/cpus
+echo 0-2,4-6 > /dev/cpuset/foreground/cpus
 echo 0-7 > /dev/cpuset/top-app/cpus
-
-# Turn off scheduler boost at the end
-echo 0 > /proc/sys/kernel/sched_boost
 
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
@@ -354,8 +326,7 @@ do
 	done
 done
 
-#Enable sleep and set s2idle as default suspend mode
-echo N > /sys/module/lpm_levels/parameters/sleep_disabled
+#Set s2idle as default suspend mode
 echo s2idle > /sys/power/mem_sleep
 
 configure_memory_parameters
