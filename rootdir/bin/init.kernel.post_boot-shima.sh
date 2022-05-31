@@ -176,8 +176,12 @@ echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 # configure input boost settings
+echo "0:1171200 1:1171200 2:1171200 3:1171200 4:1209000 5:1209000 6:1209000 7:1267000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+echo 320 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+
+# configure powerkey boost settings
 echo "0:0 1:0 2:0 3:0 4:2131200 5:0 6:0 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-echo 400 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
