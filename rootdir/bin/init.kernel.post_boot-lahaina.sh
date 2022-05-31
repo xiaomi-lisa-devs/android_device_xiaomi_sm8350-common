@@ -176,6 +176,7 @@ else
 	echo "0:1209600 1:1209600 2:1209600 3:1209600 4:1555200 5:1555200 6:1555200 7:1670400" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 fi
 echo 320 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 1 > /sys/devices/system/cpu/cpu_boost/sched_boost_on_input
 
 # configure powerkey boost settings
 echo "0:0 1:0 2:0 3:0 4:2016000 5:0 6:0 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq

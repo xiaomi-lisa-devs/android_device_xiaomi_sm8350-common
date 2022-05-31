@@ -172,6 +172,7 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 # configure input boost settings
 echo "0:1152000 1:1152000 2:1152000 3:1152000 4:1228800 5:1228800 6:1228800 7:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 echo 320 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 1 > /sys/devices/system/cpu/cpu_boost/sched_boost_on_input
 
 # configure powerkey boost settings
 echo "0:0 1:0 2:0 3:0 4:2131200 5:0 6:0 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
