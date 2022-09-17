@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from odin V13.0.5.1.45.DEV
+# All unpinned blobs below are extracted from odin V13.1.22.9.12.DEV
 
 # ADSP
 vendor/bin/adsprpcd
