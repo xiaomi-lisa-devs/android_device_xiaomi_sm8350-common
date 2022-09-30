@@ -43,6 +43,11 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # The standard device blobs
     write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
 
+    if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files-recovery.txt" ]; then
+        # The standard device recovery blobs
+        echo "TARGET_RECOVERY_DEVICE_DIRS += vendor/$VENDOR/$DEVICE/proprietary" >> "$BOARDMK"
+    fi
+
     # Finish
     write_footers
 fi
