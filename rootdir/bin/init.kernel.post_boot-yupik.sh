@@ -198,7 +198,15 @@ echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 # configure input boost settings
-echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+devicename=`getprop ro.product.device`
+
+if [ "$devicename" == "taoyao" -o "$devicename" == "zijin" -o "$devicename" == "redwood" ]; then
+    # for L9, K9E & M20
+    echo "0:1152000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+else
+    # default
+    echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+fi
 echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # configure governor settings for gold cluster
