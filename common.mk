@@ -345,6 +345,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# QTI fwk-detect
+PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti.vendor:64 # Needed by CNE app
+
 # RIL
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
