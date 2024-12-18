@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V816.0.10.0.UKKMIXM
+# All unpinned blobs below are extracted from lisa V816.0.10.0.UKOMIXM
 # sunstone: sunstone V816.0.8.0.UMQMIXM
 
 # Current blobs with ELF checks disabled:
