@@ -33,9 +33,6 @@
 /vendor/bin/hw/android\.hardware\.nfc-service\.nxp                 u:object_r:hal_nfc_default_exec:s0
 
 # Power
-/sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
-
-# Power
 /dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
 
 # Sensors

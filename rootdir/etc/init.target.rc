@@ -123,7 +123,6 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/balance_mode
     chown system system /sys/class/thermal/thermal_message/charger_temp
-    chown system system /sys/devices/virtual/touch/tp_dev/double_tap
     chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
 
     # Set xiaomi touch permissions
